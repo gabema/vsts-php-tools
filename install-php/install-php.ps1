@@ -12,7 +12,7 @@ try {
     [string]$work = Get-VstsTaskVariable -Name 'Agent.WorkFolder'
 
     [string]$phpDir = $work+'\php'
-    [string]$phpVersion = Get-VstsInput -Name 'phpVersion' -Default 'php-7.0.13-Win32-VC14-x64'
+    [string]$phpVersion = Get-VstsInput -Name 'phpVersion' -Default 'php-7.1.20-Win32-VC14-x86'
     [string]$phpSource = 'http://windows.php.net/downloads/releases/'+$phpVersion+'.zip'
     [string]$phpZip = $work + '\php.zip'
 

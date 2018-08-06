@@ -1,9 +1,9 @@
 {
     "manifestVersion": 1,
-    "id": "php-tools",
+    "id": "php-tools-gabema",
     "name": "PHP Tools for VSTS",
     "version": "0.2.0",
-    "publisher": "johnc",
+    "publisher": "gabe",
     "description": "PHP for VSTS! Install and run PHP and Composer.",
     "public": true,
     "galleryFlags": [
@@ -22,13 +22,13 @@
     ],
     "links": {
         "getstarted": {
-            "uri": "https://github.com/incarnate/vsts-php-tools"
+            "uri": "https://github.com/gabema/vsts-php-tools"
         },
         "issues": {
-            "uri": "https://github.com/incarnate/vsts-php-tools/issues"
+            "uri": "https://github.com/gabema/vsts-php-tools/issues"
         },
         "repository": {
-            "uri": "https://github.com/incarnate/vsts-php-tools"
+            "uri": "https://github.com/gabema/vsts-php-tools"
         }
 	},
     "branding": {
