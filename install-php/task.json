@@ -13,7 +13,7 @@
   "demands": [],
   "version": {
     "Major": "0",
-    "Minor": "2",
+    "Minor": "4",
     "Patch": "0"
   },
   "minimumAgentVersion": "1.95.0",
@@ -23,9 +23,9 @@
       "name": "phpVersion",
       "type": "string",
       "label": "PHP Version",
-      "defaultValue": "php-7.0.13-Win32-VC14-x64",
+      "defaultValue": "php-7.1.20-Win32-VC14-x86",
       "required": true,
-      "helpMarkDown": "PHP version to instal. For filename see http://windows.php.net/downloads/releases/"
+      "helpMarkDown": "PHP version to install. For filename see http://windows.php.net/downloads/releases/"
     }
   ],
   "execution": {

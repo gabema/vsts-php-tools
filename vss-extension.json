@@ -2,10 +2,10 @@
     "manifestVersion": 1,
     "id": "php-tools-gabema",
     "name": "PHP Tools for VSTS",
-    "version": "0.2.0",
-    "publisher": "gabe",
+    "version": "1.2.0",
+    "publisher": "GabeMartinER",
     "description": "PHP for VSTS! Install and run PHP and Composer.",
-    "public": true,
+    "public": false,
     "galleryFlags": [
         "Preview"
     ],
@@ -45,13 +45,32 @@
     },
     "files": [
       {
-        "path": "install-php",
-        "path": "composer",
+        "path": "install-php"
+      },
+      {
+        "path": "composer"
+      },
+      {
         "path": "php-command"
       },
       {
         "path": "images",
         "addressable": true
+      },
+      {
+        "path": "ps_modules/VstsTaskSdk",
+        "packagePath": "install-php/ps_modules/VstsTaskSdk",
+        "contentType": "text/plain"
+      },
+      {
+        "path": "ps_modules/VstsTaskSdk",
+        "packagePath": "composer/ps_modules/VstsTaskSdk",
+        "contentType": "text/plain"
+      },
+      {
+        "path": "ps_modules/VstsTaskSdk",
+        "packagePath": "php-command/ps_modules/VstsTaskSdk",
+        "contentType": "text/plain"
       }
     ],
     "scopes": [

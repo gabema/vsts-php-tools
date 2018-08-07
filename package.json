@@ -1,0 +1,23 @@
+{
+  "name": "vsts-php-tools",
+  "version": "1.0.0",
+  "description": "![](https://github.com/incarnate/vsts-php-tools/blob/master/images/Icon128.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabema/vsts-php-tools.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabema/vsts-php-tools/issues"
+  },
+  "homepage": "https://github.com/gabema/vsts-php-tools#readme",
+  "dependencies": {
+    "vss-web-extension-sdk": "^5.134.0"
+  }
+}
