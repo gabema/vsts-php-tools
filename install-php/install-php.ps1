@@ -20,15 +20,17 @@ try {
     [string]$composerDest = $work + '\composer.phar'
 
     Write-Verbose 'Download PHP'
-    $client = New-Object System.Net.WebClient
+
+    # Needed to download successfully from PHP site
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
     try {
-        $client.DownloadFile($phpSource, $phpZip)
+        Invoke-WebRequest -Uri $phpSource -OutFile $phpZip
     } catch [Net.WebException] {
         Write-Verbose 'PHP file not found, trying archive'
         if ($_.Exception.toString() -Match '404') {
             $phpSource = 'https://windows.php.net/downloads/releases/archives/'+$phpVersion+'.zip'
-            $client.DownloadFile($phpSource, $phpZip)
+            Invoke-WebRequest -Uri $phpSource -OutFile $phpZip
         }
     }
 

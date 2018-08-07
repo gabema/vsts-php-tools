@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "php-tools-gabema",
     "name": "PHP Tools for VSTS",
-    "version": "1.3.0",
+    "version": "1.5.0",
     "publisher": "GabeMartinER",
     "description": "PHP for VSTS! Install and run PHP and Composer.",
     "public": false,

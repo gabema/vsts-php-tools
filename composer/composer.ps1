@@ -64,6 +64,7 @@ try {
     Write-Verbose 'Starting Composer command'
 
     [string]$command = Get-VstsInput -Name 'command' -Default 'install'
+    $commandItems = $command -Split ' '
     [string]$workingFolder = Get-VstsInput -Name 'workingFolder' -Require
 
     cd $workingFolder
@@ -75,8 +76,7 @@ try {
     php -v
 
     Write-Verbose 'Run Composer'
-    php $composer $command
-
+    php $composer @commandItems
 } catch {
     # Catching reliability issues and logging them here.
     Write-VstsTaskError $_.Exception.Message
